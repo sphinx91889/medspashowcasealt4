@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-teal-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-teal-700 hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+
+  .nav-link {
+    @apply text-white/90 hover:text-white transition-colors duration-200;
+  }
+
+  .section-title {
+    @apply font-playfair text-4xl md:text-5xl font-semibold text-gray-800 mb-8;
+  }
+}
+
+/* Custom cursor styles */
+.custom-cursor {
+  @apply fixed w-8 h-8 rounded-full pointer-events-none mix-blend-difference z-50 transition-transform duration-200 ease-out;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
