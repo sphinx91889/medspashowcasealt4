@@ -37,13 +37,7 @@ const Hero = () => {
       </video>
 
       {/* Video Playback Toggle */}
-      <button 
-        onClick={toggleVideoPlayback}
-        className="absolute top-8 right-8 z-20 bg-white/20 backdrop-blur-sm p-3 rounded-full text-white hover:bg-white/30 transition-all"
-        aria-label={isPlaying ? "Pause Video" : "Play Video"}
-      >
-        {isPlaying ? <Pause size={24} /> : <Play size={24} />}
-      </button>
+      
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
